@@ -1,0 +1,9 @@
+@use 'variables' as *;
+@use 'base/reset';
+@use 'components/car-card';
+
+body {
+    background-color: $background-color;
+    color: $primary-color;
+    text-align: center;
+}

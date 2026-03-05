@@ -1,0 +1,7 @@
+@use '../variables' as *;
+
+.car-card {
+    background-color: $background-color;
+    color: $primary-color;
+    text-align: center;
+}
