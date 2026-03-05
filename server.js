@@ -13,6 +13,13 @@ app.get('/', (req, res) => {
     res.render('index', { title: 'Home'});
 });
 
+app.get('/about', (req, res) => {
+    res.render('aboutme', { title: 'About Me'});
+});
+
+app.use((req, res) => {
+    res.status(404).render('404', { title: 'Page not found' });
+})
 
 
 app.listen(PORT, () => {
