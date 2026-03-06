@@ -1,19 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 .car-card {
-  background-color: rgb(230, 14, 14);
-  color: rgb(241, 222, 222);
+  background-color: rgb(139, 116, 116);
+  color: rgb(255, 255, 255);
   text-align: center;
-  border: 2px solid rgb(241, 222, 222);
+  border: white solid 2px;
+  background-color: red;
   border-radius: 10px;
 }
 
 body {
-  background-color: rgb(230, 14, 14);
-  color: rgb(241, 222, 222);
+  background-color: rgb(139, 116, 116);
+  color: rgb(255, 255, 255);
   text-align: center;
+  margin: 40px;
 }
 
-a {
-  color: rgb(29, 19, 19);
+header {
+  font-size: x-large;
+  margin-bottom: 30px;
+}
+
+img {
+  border-radius: 10px;
+  margin: 10px;
 }
 
 /*# sourceMappingURL=styles.css.map */

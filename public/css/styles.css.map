@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../scss/components/_car-card.scss","../scss/_variables.scss","../scss/main.scss"],"names":[],"mappings":"AAEA;EACI,kBCFe;EDGf,OCJY;EDKZ;;;AEDJ;EACI,kBDJe;ECKf,ODNY;ECOZ","file":"styles.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/base/_reset.scss","../scss/components/_car-card.scss","../scss/_variables.scss","../scss/main.scss"],"names":[],"mappings":"AAAA;AAAA;AAAA;EAGE;EACA;EACA;;;ACHF;EACI,kBCFe;EDGf,OCJY;EDKZ;EACA;EACA;EACA;;;AEJJ;EACI,kBDJe;ECKf,ODNY;ECOZ;EACA,QDNM;;;ACSV;EACI;EACA;;;AAGJ;EACI;EACA","file":"styles.css"}
