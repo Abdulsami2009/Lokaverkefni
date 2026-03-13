@@ -1,5 +1,5 @@
 const express = require('express');
-const path = require('path')
+const path = require('path');
 
 const app = express();
 const PORT = 3000;
@@ -16,6 +16,12 @@ app.get('/', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('aboutme', { title: 'About Me'});
 });
+
+const getCars = () => {
+  const data = fs.readFileSync
+  (path.join(__dirname, 'src/data/cars.json'));
+  return JSON.parse(data);
+};
 
 app.use((req, res) => {
     res.status(404).render('404', { title: 'Page not found' });

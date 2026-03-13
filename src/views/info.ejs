@@ -1,0 +1,10 @@
+<%- include('partials/header') %>
+<section class="car-detail">
+  <img src="<%= car.image %>" alt="<%= car.title %>">
+  <div>
+    <h1>(<%= car.year %>)</h1>
+    <p><%= car.description %></p>
+    <a href="/">← Til baka</a>
+  </div>
+</section>
+<%- include('partials/footer') %>

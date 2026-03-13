@@ -1,0 +1,16 @@
+[
+    {
+    "id": "Buggati Veyron",
+    "title": "Buggati Veyron",
+    "year": 2005,
+    "description": "The Bugatti Veyron is a high-performance sports car produced by the French automaker Bugatti from 2005 to 2015.",
+    "image": "/img/Buggati.jpg"
+  },
+    {
+    "id": "McLaren Senna",
+    "title": "McLaren Senna",
+    "year": 2018,
+    "description": "The McLaren Senna is a high-performance sports car produced by McLaren.",
+    "image": "/img/mcLaren.jpg"
+  }
+]
