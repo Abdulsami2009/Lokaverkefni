@@ -14,7 +14,7 @@ const info = (req, res) => {
         return res.status(404).render('404', { title: 'Car Not Found' });
     }
 
-    res.render('car-details', { title: car.title, car });
+    res.render('info', { title: car.title, car });
 };
 
 module.exports = {
