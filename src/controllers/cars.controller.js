@@ -1,23 +1,19 @@
 const carService = require('../lib/cars.service');
 
-const index = (req, res) => {
-    const cars = carService.getCars();
-    res.render('index', { title: 'Cars', cars });
-};
+const getallcars = async (req, res) => {
+    try {
+        const cars = await carService.getallcars();
 
-const info = (req, res) => {
-    const { id } = req.params;
-    const car = carService.getCarId(id);
-
-
-    if (!car) {
-        return res.status(404).render('404', { title: 'Car Not Found' });
+        res.render('index', {
+            title: 'Cars',
+            cars: cars
+        });
+    } catch (error) {
+        console.error('Error fetching cars:', error);
+        res.status(500).send('my fault - Internal Server Error' );
     }
-
-    res.render('info', { title: car.title, car });
 };
 
 module.exports = {
-    index,
-    info
+    getallcars
 };
