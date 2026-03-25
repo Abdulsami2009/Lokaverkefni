@@ -4,10 +4,10 @@
   <div class="car-grid">
     <% cars.forEach(car => { %>
       <div class="car-card">
-        <img class="image" src="<%= car.image %>" alt="<%= car.title %>">
+        <img class="image" src="<%= car.image_url %>" alt="<%= car.title %>">
         <h3><%= car.title %></h3>
         <p><%= car.year %></p>
-        <a href="/car/<%= car.id %>" class="btn">See more</a>
+        <a href="/cars/<%= car.id %>" class="btn">See more</a>
       </div>
     <% }) %>
   </div>

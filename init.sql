@@ -6,9 +6,11 @@ CREATE TABLE IF NOT EXISTS cars (
     image_url VARCHAR(255)
 );
 
-TRUNCATE TABLE cars RESTART INDENTITY;
+TRUNCATE TABLE cars RESTART IDENTITY;
 
 INSERT INTO cars (title, year, description, image_url) VALUES
 ('Buggatti Veyron', 2005, 'The Bugatti Veyron is a high-performance sports car produced by the French automaker Bugatti from 2005 to 2015.', '/img/Buggati.jpg'),
-('Mclaren Senna', 2018, 'The McLaren Senna is a high-performance sports car produced by McLaren.', '/img/mclaren.webp');
+('Mclaren Senna', 2018, 'The McLaren Senna is a high-performance sports car produced by McLaren.', '/img/mclaren.webp'),
+('Lamborghini Huracan', 2014, 'The Lamborghini Huracan is an italian sports car produced by Lamborghini.', '/img/lamborghini.webp'),
+('Dababy Car', 2020, 'Its the dababy car', '/img/dababy.webp' );
 

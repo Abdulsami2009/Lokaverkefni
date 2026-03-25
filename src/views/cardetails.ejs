@@ -1,0 +1,13 @@
+<%- include('partials/header') %>
+<main>
+  <div class="car-details">
+    <h1><%= car.title %></h1>
+    <img class="image" src="<%= car.image_url %>" alt="<%= car.title %>">
+    <div class="details">
+      <p><strong>Year:</strong> <%= car.year %></p>
+      <p><strong>Description:</strong> <%= car.description %></p>
+      <a href="/" class="btn">Back to Cars</a>
+    </div>
+  </div>
+</main>
+<%- include('partials/footer') %>
