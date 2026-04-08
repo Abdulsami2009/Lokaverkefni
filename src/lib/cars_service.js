@@ -16,7 +16,21 @@ const getcarbyid = async(id) => {
     
 };
 
+const createcar = async (title, description, image_url) => {
+    const sql = `
+    INSERT INTO cars (title, description, image_url)
+    VALUES ($1, $2, $3)
+    RETURNING *;
+    `;
+
+    const values = [title, description, image_url];
+    const result = await db.query(sql, values);
+
+    return result.rows[0];
+};
+
 module.exports = {
     getallcars,
-    getcarbyid
+    getcarbyid,
+    createcar
 };

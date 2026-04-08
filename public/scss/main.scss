@@ -1,6 +1,7 @@
 @use 'variables' as *;
 @use 'base/reset';
 @use 'components/car-card';
+@use 'components/add-car';
 
 body {
     background-color: $background-color;

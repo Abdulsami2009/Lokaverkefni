@@ -44,8 +44,36 @@ const aboutme = (req, res) => {
     }
 };
 
+const getaddcarform = (req, res) => {
+    res.render('addcar', {
+        title: 'Add New Car'
+    });
+};
+
+const createnewcar = async (req, res) => {
+    try {
+        const { title, description, image_url } = req.body;
+
+        if (!title) {
+            return res.status(400).send(
+                'Title is required'
+            );
+        }
+
+        res.redirect(`/cars/${newCar.id}`);
+    } catch (error) {
+        console.error('Error adding new car;', error);
+        res.status(500).send(
+            'Internel Server Error:'
+        );
+    }
+  
+};
+
 module.exports = {
     getcardetails,
     gethomepage,
-    aboutme
+    aboutme,
+    createnewcar,
+    getaddcarform
 };
