@@ -1,16 +1,26 @@
+
 <%- include('partials/header') %>
 <main>
   <h1>Cars</h1>
+  <a href="/addcar" class="btn">Add New Car</a>
   <div class="car-grid">
     <% cars.forEach(car => { %>
       <div class="car-card">
-        <img class="image" src="<%= car.image_url %>" alt="<%= car.title %>">
+        <% if (car.image_url) { %>
+          <div style="
+            background-image: url('<%= car.image_url %>');
+            
+            background-position: center;
+            width: 100%;"
+          ></div>
+        <% } else { %>
+          <div class="card-img placeholder-img"></div>
+        <% } %>
         <h3><%= car.title %></h3>
-        <p><%= car.year %></p>
         <a href="/cars/<%= car.id %>" class="btn">See more</a>
       </div>
     <% }) %>
   </div>
-
-
+</main>
 <%- include('partials/footer') %>
+

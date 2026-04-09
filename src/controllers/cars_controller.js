@@ -45,7 +45,7 @@ const aboutme = (req, res) => {
 };
 
 const getaddcarform = (req, res) => {
-    res.render('addcar', {
+    res.render('add-car', {
         title: 'Add New Car'
     });
 };

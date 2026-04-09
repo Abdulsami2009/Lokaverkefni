@@ -1,19 +1,40 @@
 <%- include('partials/header') %>
 
-<section class="add-car-form">
-    <h1>Add a New Car</h1>
-    <form action="/cars" method="POST">
-        <label for="title">Title:</label>
-        <input type="text" id="title" name="title" required>
+<section class="featured">
+    <div style="
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: rgb(10, 9, 9);
+        padding: 2.5rem;
+        border-radius: 12px;
+        box-shadow: none;
+        border: wheat solid 1px;
+        ">
+        <h2 style="margin-bottom: 1.5rem; text-align: center;">Add a New Car</h2>
+    
+    <form action="/cars/new" method="post" style="display: flex; flex-direction: column; gap: 1.5rem;">
 
-        <label for="description">Description:</label>
-        <textarea id="description" name="description" required></textarea>
+        <div>
+            <label for="title" style="font-weight: 300; margin-bottom: 1rem;">Title:</label>
 
-        <label for="image_url">Image URL:</label>
-        <input type="text" id="image_url" name="image_url" required>
+            <input
+             type="text"
+             id="title"
+             name="title"
+             required>
+        </div>
 
-        <button type="submit">Add Car</button>
-    </form>
+        <div>
+            <label for="image_url">Image URL:</label>
+            <input
+            type="text"
+            id="image_url"
+            name="image_url"
+            placeholder="https://...">
+        </div>
+
+        <button type="submit" class="btn-primary">Add Car</button>
+    </form></div>
 </section>
 
 <%- include('partials/footer') %>
