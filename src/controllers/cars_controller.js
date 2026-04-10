@@ -52,7 +52,7 @@ const getaddcarform = (req, res) => {
 
 const createnewcar = async (req, res) => {
     try {
-        const { title, description, image_url } = req.body;
+        const { title, year, image_url } = req.body;
 
         if (!title) {
             return res.status(400).send(
@@ -60,11 +60,19 @@ const createnewcar = async (req, res) => {
             );
         }
 
+        if (!year) {
+            return res.status(400).send(
+                'Year is required'
+            );
+        }
+
+        const newCar = await carService.createcar(title, year, image_url);
+
         res.redirect(`/cars/${newCar.id}`);
     } catch (error) {
-        console.error('Error adding new car;', error);
+        console.error('Error adding new car:', error);
         res.status(500).send(
-            'Internel Server Error:'
+            'Internal Server Error: ' + error.message
         );
     }
   

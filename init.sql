@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS cars (
     title VARCHAR(255) NOT NULL,
     year INT NOT NULL,
     description TEXT,
-    image_url VARCHAR(255)
+    image_url VARCHAR(1000)
 );
 
 TRUNCATE TABLE cars RESTART IDENTITY;
@@ -14,4 +14,6 @@ INSERT INTO cars (title, year, description, image_url) VALUES
 ('Lamborghini Huracan', 2014, 'The Lamborghini Huracan is an italian sports car produced by Lamborghini.', '/img/lamborghini.webp'),
 ('Dababy Car', 2020, 'Its the dababy car', '/img/dababy.webp' ),
 ('Lada', 1960, 'The lada is everyones dream car', '/img/lada.webp');
+
+
 
