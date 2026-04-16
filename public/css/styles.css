@@ -13,7 +13,7 @@
   text-align: center;
   border: white solid 2px;
   background-color: rgb(90, 73, 73);
-  border-radius: 10px;
+  border-radius: 20px;
   margin: 40px;
   padding: 10px;
 }
@@ -45,4 +45,26 @@ a:hover {
   background-color: red;
 }
 
+.image {
+    border-radius: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    height: auto;
+    transition: ease-in-out 0.3s;
+
+    :hover {
+      transition: rotate(200deg);
+    }
+}
+
+.car-details {
+  background-color: rgb(3, 3, 3);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  border: rgb(252, 255, 255) solid 2px;
+  border-radius: 20px;
+  margin: 40px auto;
+  padding: 50px;
+  max-width: 600px;
+}
 

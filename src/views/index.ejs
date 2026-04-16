@@ -6,16 +6,7 @@
   <div class="car-grid">
     <% cars.forEach(car => { %>
       <div class="car-card">
-        <% if (car.image_url) { %>
-          <div style="
-            background-image: url('<%= car.image_url %>');
-            
-            background-position: center;
-            width: 100%;"
-          ></div>
-        <% } else { %>
-          <div class="card-img placeholder-img"></div>
-        <% } %>
+        <img class="image" src="<%= car.image_url %>" alt="<%= car.title %>">
         <h3><%= car.title %></h3>
         <a href="/cars/<%= car.id %>" class="btn">See more</a>
       </div>
