@@ -7,42 +7,47 @@
   padding: 0;
 }
 
+
 .car-card {
-  background-color: rgb(139, 116, 116);
-  color: rgb(255, 255, 255);
+  display: block;
+  background-color: #222;
+  color: #fafafa;
   text-align: center;
-  border: white solid 2px;
-  background-color: rgb(90, 73, 73);
+  border: #fafafa solid 2px;
   border-radius: 20px;
   margin: 40px;
   padding: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 body {
-  background-color: rgb(10, 10, 10);
-  color: rgb(255, 255, 255);
+  background-color: #181818;
+  color: #fafafa;
   text-align: center;
   margin: 40px;
+  font-family: poppins, sans-serif;
 }
 
 header {
   font-size: x-large;
-  margin-bottom: 30px;
+  margin-bottom: 50px;
 }
 
 a {
   display: inline-block;
   padding: 10px 20px;
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
+  background-color: #fafafa;
+  color: #222;
   text-decoration: none;
   border-radius: 5px;
   margin: 10px;
-  transition: ease-in-out 0.3s;
+  transition: all 0.3s ease;
 }
 
 a:hover {
-  background-color: red;
+  background-color: #444;
+  color: #fafafa;
+  transform: scale(1.05);
 }
 
 .image {
@@ -50,18 +55,18 @@ a:hover {
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     max-width: 100%;
     height: auto;
-    transition: ease-in-out 0.3s;
-
-    :hover {
-      transition: rotate(200deg);
-    }
+    transition: transform 0.3s ease;
 }
 
+.image:hover {
+      transform: scale(1.05);
+    }
+
 .car-details {
-  background-color: rgb(3, 3, 3);
-  color: rgb(255, 255, 255);
+  background-color: #222;
+  color: #fafafa;
   text-align: center;
-  border: rgb(252, 255, 255) solid 2px;
+  border: #fafafa solid 2px;
   border-radius: 20px;
   margin: 40px auto;
   padding: 50px;
