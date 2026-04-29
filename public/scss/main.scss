@@ -4,10 +4,11 @@
 @use 'components/add-car';
 
 body {
-    background-color: $background-color;
-    color: $primary-color;
-    text-align: center;
-    margin: $spacing;
+  background-color: $background-color;
+  color: $primary-color;
+  text-align: center;
+  margin: $spacing;
+  font-family: poppins, sans-serif;
 }
 
 header {
@@ -15,13 +16,34 @@ header {
     margin-bottom: 30px;
 }
 
-img {
+.image {
     border-radius: 10px;
-    margin: 10px;
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
 }
 
-.car-detail {
-    text-align: center;
-    background-color: black;
-    color: white;
+.image:hover {
+      transform: scale(1.05);
+    }
+
+.car-details {
+  background-color: $background-color;
+  color: $primary-color;
+  text-align: center;
+  border: $primary-color solid 2px;
+  border-radius: 20px;
+  margin: 40px auto;
+  padding: 50px;
+  max-width: 600px;
+}
+
+h1 {
+  font-size: xx-large;
+  margin-bottom: 30px;
+}
+
+p {
+  margin: 30px;
 }

@@ -1,10 +1,53 @@
 @use '../variables' as *;
 
-.add-car-form {
-    text-align: center;
-    background-color: aliceblue;
-    border: black solid 1px;
-    border-radius: 10px;
+.featured {
+    width: 100%;
     padding: 20px;
-    margin: 20px auto;
+}
+
+.add-car-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #222 0%, #2a2a2a 100%);
+    padding: 2.5rem;
+    border-radius: 15px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(250, 250, 250, 0.1);
+    color: #fafafa;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    font-size: large;
+    color: $primary-color;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border: $primary-color solid 1px;
+    border-radius: 5px;
+    background-color: #333;
+    color: $primary-color;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: $primary-color;
+    color: $background-color;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: large;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: red;
+    color: $background-color;
+    transform: scale(1.10);
+    border: #fafafa solid 1px;
 }

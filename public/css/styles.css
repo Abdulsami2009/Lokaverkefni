@@ -2,15 +2,13 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  box-shadow: inset;
   margin: 0;
   padding: 0;
 }
 
-
 .car-card {
   display: block;
-  background-color: #222;
+  background-color: #181818;
   color: #fafafa;
   text-align: center;
   border: #fafafa solid 2px;
@@ -20,24 +18,11 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
-body {
-  background-color: #181818;
-  color: #fafafa;
-  text-align: center;
-  margin: 40px;
-  font-family: poppins, sans-serif;
-}
-
-header {
-  font-size: x-large;
-  margin-bottom: 50px;
-}
-
 a {
   display: inline-block;
   padding: 10px 20px;
   background-color: #fafafa;
-  color: #222;
+  color: #181818;
   text-decoration: none;
   border-radius: 5px;
   margin: 10px;
@@ -50,20 +35,85 @@ a:hover {
   transform: scale(1.05);
 }
 
+.featured {
+  width: 100%;
+  padding: 20px;
+}
+
+.add-car-form {
+  max-width: 600px;
+  margin: 0 auto;
+  background: linear-gradient(135deg, #222 0%, #2a2a2a 100%);
+  padding: 2.5rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(250, 250, 250, 0.1);
+  color: #fafafa;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  font-size: large;
+  color: #fafafa;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 30px;
+  border: #fafafa solid 1px;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fafafa;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #fafafa;
+  color: #181818;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  font-size: large;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: red;
+  color: #181818;
+  transform: scale(1.1);
+  border: #fafafa solid 1px;
+}
+
+body {
+  background-color: #181818;
+  color: #fafafa;
+  text-align: center;
+  margin: 40px;
+  font-family: poppins, sans-serif;
+}
+
+header {
+  font-size: x-large;
+  margin-bottom: 30px;
+}
+
 .image {
-    border-radius: 10px;
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    max-width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
+  border-radius: 10px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
 }
 
 .image:hover {
-      transform: scale(1.05);
-    }
+  transform: scale(1.05);
+}
 
 .car-details {
-  background-color: #222;
+  background-color: #181818;
   color: #fafafa;
   text-align: center;
   border: #fafafa solid 2px;
@@ -72,3 +122,14 @@ a:hover {
   padding: 50px;
   max-width: 600px;
 }
+
+h1 {
+  font-size: xx-large;
+  margin-bottom: 30px;
+}
+
+p {
+  margin: 30px;
+}
+
+/*# sourceMappingURL=styles.css.map */
