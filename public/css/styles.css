@@ -126,6 +126,9 @@ header {
 h1 {
   font-size: xx-large;
   margin-bottom: 30px;
+  background-color: #333;
+  border: #fafafa solid 1px;
+  border-radius: 4px;
 }
 
 p {
