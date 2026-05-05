@@ -52,11 +52,17 @@ const getaddcarform = (req, res) => {
 
 const createnewcar = async (req, res) => {
     try {
-        const { title, year, image_url } = req.body;
+        const { title, price, year, description, image_url } = req.body;
 
         if (!title) {
             return res.status(400).send(
                 'Title is required'
+            );
+        }
+
+        if (!price) {
+            return res.status(400).send(
+                'Price is required'
             );
         }
 
@@ -66,7 +72,19 @@ const createnewcar = async (req, res) => {
             );
         }
 
-        const newCar = await carService.createcar(title, year, image_url);
+        if (!description) {
+            return res.status(400).send(
+                'Description is required'
+            );
+        }
+
+        if (!image_url) {
+            return res.status(400).send(
+                'Image URL is required'
+            );
+        }
+
+        const newCar = await carService.createcar(title, price, year, description, image_url);
 
         res.redirect(`/cars/${newCar.id}`);
     } catch (error) {

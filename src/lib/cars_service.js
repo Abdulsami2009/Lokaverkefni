@@ -16,14 +16,14 @@ const getcarbyid = async(id) => {
     
 };
 
-const createcar = async (title, year, image_url) => {
+const createcar = async (title, value, year, description, image_url) => {
     const sql = `
-    INSERT INTO cars (title, year, image_url)
-    VALUES ($1, $2, $3)
+    INSERT INTO cars (title, value, year, description, image_url)
+    VALUES ($1, $2, $3, $4, $5)
     RETURNING *;
     `;
 
-    const values = [title, year, image_url];
+    const values = [title, value, year, description, image_url];
     const result = await db.query(sql, values);
 
     return result.rows[0];
