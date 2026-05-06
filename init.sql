@@ -20,3 +20,6 @@ INSERT INTO cars (title, value, year, description, image_url) VALUES
 
 
 
+
+
+
