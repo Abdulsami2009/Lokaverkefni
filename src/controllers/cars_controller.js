@@ -52,7 +52,7 @@ const getaddcarform = (req, res) => {
 
 const createnewcar = async (req, res) => {
     try {
-        const { title, price, year, description, image_url } = req.body;
+        const { title, value, year, description, image_url } = req.body;
 
         if (!title) {
             return res.status(400).send(
@@ -60,7 +60,7 @@ const createnewcar = async (req, res) => {
             );
         }
 
-        if (!price) {
+        if (!value) {
             return res.status(400).send(
                 'Price is required'
             );
@@ -84,7 +84,7 @@ const createnewcar = async (req, res) => {
             );
         }
 
-        const newCar = await carService.createcar(title, price, year, description, image_url);
+        const newCar = await carService.createcar(title, value, year, description, image_url);
 
         res.redirect(`/cars/${newCar.id}`);
     } catch (error) {
